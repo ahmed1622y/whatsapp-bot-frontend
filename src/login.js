@@ -1,6 +1,7 @@
 import { Button, Form, Input } from "antd";
 import axios from "axios";
 import url from "./url";
+import logo from "./logo3.png";
 import { AuthContext } from "./context";
 import { useState, useContext } from "react";
 export const Login = () => {
@@ -18,8 +19,9 @@ export const Login = () => {
   }
   return (
     <div className="login">
+      <img src={logo} alt="" style={{ width: 100, marginTop: -70 }} />
+      <h3 style={{ margin: 0 }}>شاي الهلال</h3>
       <div className="form">
-        {" "}
         <Form
           name="basic"
           labelCol={{

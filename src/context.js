@@ -17,7 +17,6 @@ export const AuthProvider = (props) => {
         .catch((err) => {
           setAuth([true, false, {}]);
         });
-      setAuth([true, auth[1], auth[2]]);
     } else {
       setAuth([true, auth[1], auth[2]]);
     }

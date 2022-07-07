@@ -6,6 +6,7 @@ import { Data } from "./data";
 import { Bot } from "./bot";
 function App() {
   const [auth] = useContext(AuthContext);
+  console.log(auth);
   return (
     <BrowserRouter>
       <Routes>
